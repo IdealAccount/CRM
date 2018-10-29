@@ -1,0 +1,772 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+	<title>Title</title>
+	<link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+	<div class="wrapper">
+		<!-- ЭЛЕКТРОННАЯ ПЛОЩАДКА -->
+		<div class="popup electronic-platform">
+			<h3 class="popup-title">электронная площадка</h3>
+			<div class="popup-content">
+				<form action="" id="electronic-platform">
+					<div class="control">
+						<div class="control-select">
+							<div class="control-select-open"></div>
+							<label class="control-label" for="template-name" data-placeholder="Название площадки">
+								<input
+										id="template-name"
+										class="control-select-input"
+										type="hidden"
+										name="field-name"
+										form="electronic-platform"
+								>
+							</label>
+							<ul class="control-select__dropdown">
+								<li class="control-select__dropdown-content">1</li>
+								<li class="control-select__dropdown-content">2</li>
+								<li class="control-select__dropdown-content">3</li>
+								<li class="control-select__dropdown-content">5</li>
+								<li class="control-select__dropdown-content">3</li>
+								<li class="control-select__dropdown-content">6</li>
+							</ul>
+						</div>
+					</div>
+					<div class="control">
+						<label for="link" class="control-label">
+							<input id="link"
+								   class="control-input"
+								   type="text"
+								   name="link"
+								   autocomplete="off"
+								   tabindex placeholder="Ссылка"
+								   form="electronic-platform"
+							>
+						</label>
+					</div>
+					<div class="control">
+						<div class="control-select" >
+							<div class="control-select-open"></div>
+							<label class="control-label" for="electronic-signature" data-placeholder="Электронная подпись">
+								<input
+										id="electronic-signature"
+										class="control-select-input"
+										type="hidden"
+										data-role="select"
+										name="field-name"
+										form="electronic-platform"
+								>
+							</label>
+						</div>
+					</div>
+					<div class="control double-control">
+						<label for="accreditation" class="control-label">
+							<input id="accreditation"
+								   class="control-input"
+								   type="text"
+								   name="accreditation"
+								   autocomplete="off"
+								   tabindex placeholder="Аккредитация"
+								   form="electronic-platform"
+							>
+						</label>
+						<label for="" class="control-label">
+							<input id=""
+								   class="control-input"
+								   type="text"
+								   name="accreditation2"
+								   autocomplete="off"
+								   tabindex
+								   placeholder=""
+								   form="electronic-platform"
+							>
+						</label>
+					</div>
+					<div class="control">
+						<label for="notes" class="control-label">
+							<textarea
+									id="notes"
+									class="control-input textarea"
+									name="notes"
+									placeholder="Примечания"
+									form="electronic-platform"
+							></textarea>
+						</label>
+					</div>
+				</form>
+			</div>
+		</div>
+		<hr>
+		<!-- ЭЛЕКТРОННАЯ ПОДПИСЬ -->
+		<div class="popup electronic-signature">
+			<h3 class="popup-title">электронная подпись</h3>
+			<div class="popup-content">
+				<form action="" id="form-electronic-signature">
+					<div class="control">
+						<div class="control-select" >
+							<div class="control-select-open"></div>
+							<label class="control-label" for="key-holder" data-placeholder="Владелец ключа">
+								<input
+										id="key-holder"
+										class="control-select-input"
+										type="hidden"
+										data-role="select"
+										name="key-holder"
+										form="form-electronic-signature"
+								>
+							</label>
+							<ul class="control-select__dropdown">
+								<li class="control-select__dropdown-content"></li>
+							</ul>
+						</div>
+					</div>
+					<div class="control double-control">
+						<label for="validity" class="control-label">
+							<input id="validity"
+								   class="control-input"
+								   type="text"
+								   name="validity"
+								   autocomplete="off"
+								   tabindex
+								   placeholder="Срок действия"
+								   form="form-electronic-signature"
+							>
+						</label>
+						<label for="" class="control-label">
+							<input id=""
+								   class="control-input"
+								   type="text"
+								   name="validity2"
+								   autocomplete="off"
+								   tabindex
+								   placeholder=""
+								   form="electronic-platform"
+							>
+						</label>
+					</div>
+					<div class="control">
+						<div class="control-select" >
+							<div class="control-select-open"></div>
+							<label class="control-label" for="verification-center" data-placeholder="Удостоверяющий центр">
+								<input
+										id="verification-center"
+										class="control-select-input"
+										type="hidden"
+										data-role="select"
+										name="verification-center"
+										form="form-electronic-signature"
+								>
+							</label>
+							<ul class="control-select__dropdown">
+								<li class="control-select__dropdown-content"></li>
+							</ul>
+						</div>
+					</div>
+					<div class="subline">
+						<a href="#!" class="list-link">Список площадок</a>
+					</div>
+					<!--<div class="checkbox">-->
+					<!--<input id="autosearch" class="checkbox-input" type="checkbox">-->
+					<!--<label for="autosearch" class="checkbox-label">Автопоиск</label>-->
+					<!--</div>-->
+				</form>
+			</div>
+		</div>
+		<hr>
+		<!-- ИЗМЕНЕНИЕ ШАБЛОНА ПОИСКА -->
+		<div class="popup new-template-search">
+			<h3 class="popup-title">новый шаблон поиска</h3>
+			<div class="popup-content">
+				<form action="" id="form-template-search">
+					<div class="control">
+						<label for="template-name1" class="control-label">
+							<input
+								   id="template-name1"
+								   class="control-input"
+								   type="search"
+								   name="template-name"
+								   autocomplete="off"
+								   tabindex
+								   placeholder="Название шаблона"
+								   form="form-template-search"
+							>
+						</label>
+					</div>
+					<div class="control">
+						<div class="control-select" >
+							<div class="control-select-open"></div>
+							<label class="control-label" for="notifications" data-placeholder="Уведомления">
+								<input
+										id="notifications"
+										class="control-select-input"
+										type="hidden"
+										data-role="select"
+										name="notifications"
+										form="form-template-search"
+								>
+							</label>
+							<ul class="control-select__dropdown">
+								<li class="control-select__dropdown-content"></li>
+							</ul>
+						</div>
+					</div>
+					<div class="checkbox">
+						<input id="autosearch"
+							   class="checkbox-input"
+							   type="checkbox"
+							   form="form-template-search"
+						>
+						<label for="autosearch" class="checkbox-label">Автопоиск</label>
+					</div>
+					<div class="btn-container">
+						<button type="submit" class="btn btn-primary">Сохранить</button>
+						<button type="submit" class="btn btn-cancel">Отмена</button>
+					</div>
+				</form>
+			</div>
+		</div>
+		<hr>
+		<!-- Редактирование шаблона -->
+		<div class="popup template-editing">
+			<h3 class="popup-title">редактирование шаблона</h3>
+			<div class="popup-content">
+				<form action="" id="form-template-editing">
+				<div class="control">
+					<label for="template-name2" class="control-label">
+						<input
+								id="template-name2"
+								class="control-input"
+								type="search"
+								name="template-name"
+								autocomplete="off"
+								tabindex
+								placeholder="Название шаблона"
+								form="form-template-search"
+						>
+					</label>
+				</div>
+				<div class="control">
+					<div class="control-select" >
+						<div class="control-select-open"></div>
+						<label class="control-label" for="notifications2" data-placeholder="Уведомления">
+							<input
+									id="notifications2"
+									class="control-select-input"
+									type="hidden"
+									data-role="select"
+									name="notifications"
+									form="form-template-search"
+							>
+						</label>
+						<ul class="control-select__dropdown">
+							<li class="control-select__dropdown-content"></li>
+						</ul>
+					</div>
+				</div>
+				<div class="checkbox">
+					<input id="autosearch2" class="checkbox-input" type="checkbox">
+					<label for="autosearch2" class="checkbox-label">Автопоиск</label>
+				</div>
+				<div class="btn-container">
+					<button type="submit" class="btn btn-primary">Сохранить</button>
+					<button type="submit" class="btn btn-cancel">Отмена</button>
+				</div>
+			</form>
+			</div>
+		</div>
+		<hr>
+		<!-- ДОБАВЛЕНИЕ ТЕНДЕРОВ -->
+
+		<!--Добавление тендеров -->
+		<div class="popup adding-tenders">
+			<h3 class="popup-title">добавление тендеров</h3>
+			<div class="popup-content">
+				<form action="" id="form-adding-tenders">
+					<div class="control">
+						<label for="add-by-tender" class="control-label">
+							<input
+									id="add-by-tender"
+									class="control-input"
+									type="search"
+									name="add-by-tender"
+									autocomplete="off"
+									tabindex
+									placeholder="Добавить по номеру тендера"
+									form="form-adding-tenders"
+							>
+						</label>
+					</div>
+					<div class="subline">
+						<a href="#!" class="list-link">Загрузить списком</a>
+					</div>
+
+					<div class="btn-container">
+						<button type="submit" class="btn btn-primary">Добавить</button>
+						<button type="submit" class="btn btn-cancel">Отмена</button>
+					</div>
+				</form>
+			</div>
+		</div>
+		<hr>
+		<!-- Обеспечение заявки -->
+		<div class="popup provision-request">
+			<h3 class="popup-title">обеспечение заявки</h3>
+			<div class="popup-content">
+				<form action="" id="form-provision-request">
+					<div class="control">
+						<label for="provision-request" class="control-label">
+							<input
+									id="provision-request"
+									class="control-input"
+									type="text"
+									name="provision-request"
+									autocomplete="off"
+									tabindex
+									placeholder="5 673,00"
+									form="form-provision-request"
+							>
+						</label>
+					</div>
+					<div class="control">
+						<div class="control-select" >
+							<div class="control-select-open"></div>
+							<label class="control-label" for="provision-type" data-placeholder="Тип обеспечения">
+								<input
+										id="provision-type"
+										class="control-select-input"
+										type="hidden"
+										data-role="select"
+										name="provision-type"
+										form="form-provision-request"
+								>
+							</label>
+							<ul class="control-select__dropdown">
+								<li class="control-select__dropdown-content"></li>
+							</ul>
+						</div>
+					</div>
+					<div class="checkbox">
+						<input id="provision1" class="checkbox-input" type="checkbox">
+						<label for="provision1" class="checkbox-label">Обеспечение внесено</label>
+					</div>
+				</form>
+			</div>
+		</div>
+		<hr>
+		<!-- Обеспечение контракта -->
+		<div class="popup provision-contract">
+			<h3 class="popup-title">обеспечение контакта</h3>
+			<div class="popup-content">
+				<form action="" id="form-provision-contract">
+					<div class="control">
+						<label for="provision-contract" class="control-label">
+							<input
+									id="provision-contract"
+									class="control-input"
+									type="text"
+									name="provision-request-contract"
+									autocomplete="off"
+									tabindex
+									placeholder="170 190,00"
+									form="form-provision-contract"
+							>
+						</label>
+					</div>
+					<div class="control">
+						<div class="control-select">
+							<div class="control-select-open"></div>
+							<label class="control-label" for="provision-type-contract" data-placeholder="Тип обеспечения">
+								<input
+										id="provision-type-contract"
+										class="control-select-input"
+										type="hidden"
+										data-role="select"
+										name="provision-type-contract"
+										form="form-provision-contract"
+								>
+							</label>
+							<ul class="control-select__dropdown">
+								<li class="control-select__dropdown-content"></li>
+							</ul>
+						</div>
+					</div>
+					<div class="checkbox">
+						<input id="provision2" class="checkbox-input" type="checkbox">
+						<label for="provision2" class="checkbox-label">Обеспечение внесено</label>
+					</div>
+				</form>
+			</div>
+		</div>
+		<hr>
+		<!-- Обеспечение заявки с кнопкой -->
+		<div class="popup provision-request-bank">
+			<h3 class="popup-title">обеспечение заявки</h3>
+			<div class="popup-content">
+			<form action="" id="form-provision-request-bank">
+					<div class="control">
+						<label for="provision-request-bank" class="control-label">
+							<input
+									id="provision-request-bank"
+									class="control-input"
+									type=""
+									name="provision-request-bank"
+									autocomplete="off"
+									tabindex
+									placeholder="5 673,00"
+									form="form-provision-request-bank"
+							>
+						</label>
+					</div>
+					<div class="control">
+						<div class="control-select">
+							<div class="control-select-open"></div>
+							<label for="request-bank-guarantee" class="control-label" data-placeholder="Банковская гарантия">
+								<input
+										id="request-bank-guarantee"
+										class="control-input"
+										type="hidden"
+										name="request-bank-guarantee"
+										autocomplete="off"
+										tabindex
+										form="form-provision-request-bank"
+								>
+							</label>
+
+							<ul class="control-select__dropdown">
+								<li class="control-select__dropdown-content"></li>
+							</ul>
+						</div>
+					</div>
+					<div class="control">
+						<button type="submit" class="btn btn-submit btn-primary">Отправить запрос в банк</button>
+					</div>
+				<div class="checkbox">
+					<input id="provision4" class="checkbox-input" type="checkbox">
+					<label for="provision4" class="checkbox-label">Обеспечение внесено</label>
+				</div>
+			</form>
+			</div>
+		</div>
+		<hr>
+		<!-- Обеспечение контракта с кнопкой -->
+		<div class="popup provision-contract-bank">
+			<h3 class="popup-title">обеспечение контракта</h3>
+			<div class="popup-content">
+				<form action="" id="form-provision-contract-bank">
+				<div class="control">
+					<label for="provision-contract-bank" class="control-label">
+						<input
+								id="provision-contract-bank"
+								class="control-input"
+								type=""
+								name="provision-request-bank"
+								autocomplete="off"
+								tabindex
+								placeholder="5 673,00"
+								form="form-provision-contract-bank"
+						>
+					</label>
+				</div>
+				<div class="control">
+					<div class="control-select">
+						<div class="control-select-open"></div>
+						<label for="contract-bank-guarantee" class="control-label" data-placeholder="Банковская гарантия">
+							<input
+									id="contract-bank-guarantee"
+									class="control-input"
+									type="hidden"
+									name="contract-bank-guarantee"
+									autocomplete="off"
+									tabindex
+									form="form-provision-contract-bank"
+							>
+						</label>
+						<ul class="control-select__dropdown">
+							<li class="control-select__dropdown-content"></li>
+						</ul>
+					</div>
+				</div>
+				<div class="control">
+					<button type="submit" class="btn btn-submit btn-primary">Отправить запрос в банк</button>
+				</div>
+				<div class="checkbox">
+					<input
+							id="provision5"
+							class="checkbox-input"
+							type="checkbox"
+							form="form-provision-contract-bank"
+					>
+					<label for="provision5" class="checkbox-label">Обеспечение внесено</label>
+				</div>
+			</form>
+			</div>
+		</div>
+		<hr>
+		<!-- Запрос отправлен -->
+		<div class="popup">
+			<h3 class="popup-title">Запрос отправлен</h3>
+			<div class="popup-content">
+				<p class="popup-text">Ваш запрос на получение банковской гарантии под данный тендер отправлен на обработку</p>
+				<div class="btn-container">
+					<button type="submit" class="btn btn-primary">Закрыть</button>
+				</div>
+			</div>
+		</div>
+		<hr>
+		<!-- Удаление шаблона поиска -->
+		<div class="popup">
+			<h3 class="popup-title">Удаление шаблона поиска</h3>
+			<div class="popup-content">
+				<p class="popup-text">Вы уверене что хотите удалить данный поисковый шаблон?</p>
+				<div class="btn-container">
+					<button type="submit" class="btn btn-primary">Удалить</button>
+					<button type="submit" class="btn btn-cancel">Отмена</button>
+				</div>
+			</div>
+		</div>
+		<hr>
+	</div>
+
+	<div class="popup popup-filter">
+		<h3 class="popup-title">поисковый фильтер</h3>
+		<div class="popup-content">
+			<form action="" id="form-filter" class="form-filter">
+				<div class="control">
+					<label class="control-label">
+						<input
+								class="control-input"
+								type="search"
+								name="keywords"
+								placeholder="Ключевые слова или номера закупок"
+						>
+					</label>
+				</div>
+				<div class="control">
+					<label class="control-label">
+						<input
+								class="control-input"
+								type="text"
+								name="exclude-words"
+								placeholder="Иcключить слова или номера закупок"
+						>
+					</label>
+				</div>
+				<div class="control-row">
+					<div class="control">
+						<div class="control-select">
+							<div class="control-select-open"></div>
+							<label class="control-label" data-placeholder="Регион поставки" data-filter-control>
+								<input
+										class="control-input"
+										type="hidden"
+										name=""
+								>
+							</label>
+						</div>
+					</div>
+					<div class="control">
+						<div class="control-select">
+							<div class="control-select-open"></div>
+							<label class="control-label" data-placeholder="Отрасль" data-filter-control>
+								<input
+										class="control-input"
+										type="hidden"
+										name=""
+								>
+							</label>
+						</div>
+					</div>
+				</div>
+				<div class="control">
+					<div class="control-select">
+						<div class="control-select-open"></div>
+						<label class="control-label" data-placeholder="Название заказчика, ИНН, ОГРН" data-filter-control>
+							<input
+									class="control-input"
+									type="hidden"
+									name=""
+							>
+						</label>
+					</div>
+				</div>
+				<div class="control-row">
+					<div class="control">
+						<div class="control-select">
+							<div class="control-select-open"></div>
+							<label class="control-label" data-placeholder="Этап" data-filter-control>
+								<input
+										class="control-input"
+										type="hidden"
+										name=""
+								>
+							</label>
+						</div>
+					</div>
+					<div class="control">
+						<div class="control-select">
+							<div class="control-select-open"></div>
+							<label class="control-label" data-placeholder="Тип торгов" data-filter-control>
+								<input
+										class="control-input"
+										type="hidden"
+										name=""
+								>
+							</label>
+						</div>
+					</div>
+				</div>
+				<div class="control-row">
+					<div class="control">
+						<div class="control-select">
+							<div class="control-select-open"></div>
+							<label class="control-label" data-placeholder="Способы отбора" data-filter-control>
+								<input
+										class="control-input"
+										type="hidden"
+										name=""
+								>
+							</label>
+						</div>
+					</div>
+					<div class="control">
+						<div class="control-select">
+							<div class="control-select-open"></div>
+							<label class="control-label" data-placeholder="Площадки" data-filter-control>
+								<input
+										class="control-input"
+										type="hidden"
+										name=""
+								>
+							</label>
+						</div>
+					</div>
+				</div>
+				<div class="control-row">
+					<div class="control">
+						<div class="control-input">
+							<label class="control-label">
+								<input
+										class="control-input"
+										type="text"
+										name=""
+										placeholder="Начальная цена"
+								>
+							</label>
+						</div>
+					</div>
+					<div class="control">
+						<div class="control-input">
+							<label class="control-label">
+								<input
+										class="control-input"
+										type="text"
+										name=""
+										placeholder="Конечная цена"
+								>
+							</label>
+						</div>
+					</div>
+				</div>
+				<div class="control-row">
+					<div class="control double-control">
+						<label class="control-label">
+							<input
+									class="control-input"
+									type="text"
+									name=""
+									placeholder="Дата публикации (от)"
+							>
+						</label>
+						<label class="control-label">
+							<input
+									class="control-input"
+									type="text"
+									name=""
+									placeholder="Дата публикации (до)"
+							>
+						</label>
+					</div>
+					<div class="control">
+						<div class="control-select">
+							<div class="control-select-open"></div>
+							<label class="control-label" data-placeholder="Преимущества" data-filter-control>
+								<input
+										class="control-input"
+										type="hidden"
+										name=""
+								>
+							</label>
+						</div>
+					</div>
+				</div>
+				<div class="control-row">
+					<div class="control">
+						<div class="control-select">
+							<div class="control-select-open"></div>
+							<label class="control-label" data-placeholder="Статус" data-filter-control>
+								<input
+										class="control-input"
+										type="hidden"
+										name=""
+								>
+							</label>
+						</div>
+					</div>
+					<div class="control">
+						<div class="control-select">
+							<div class="control-select-open"></div>
+							<label class="control-label" data-placeholder="Исполнитель" data-filter-control>
+								<input
+										class="control-input"
+										type="hidden"
+										name=""
+								>
+							</label>
+						</div>
+					</div>
+				</div>
+				<div class="control-row">
+					<div class="control">
+						<div class="control-select">
+							<div class="control-select-open"></div>
+							<label class="control-label" data-placeholder="Категория" data-filter-control>
+								<input
+										class="control-input"
+										type="hidden"
+										name=""
+								>
+							</label>
+						</div>
+					</div>
+					<div class="control">
+						<div class="control-select">
+							<div class="control-select-open"></div>
+							<label class="control-label" data-placeholder="Причина отказа" data-filter-control>
+								<input
+										class="control-input"
+										type="hidden"
+										name=""
+								>
+							</label>
+						</div>
+					</div>
+				</div>
+			</form>
+		</div>
+	</div>
+
+
+
+	<!--<button type="submit" class="btn btn-primary">Сохранить</button>-->
+	<!--<button type="submit" class="btn btn-cancel">Отмена</button>-->
+
+
+
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="js/index.js"></script>
+</body>
+</html>

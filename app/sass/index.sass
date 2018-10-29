@@ -1,0 +1,215 @@
+@import '_normalize'
+@import '_font'
+
+$browser-context: 16
+
+@function em($pixels, $context: $browser-context)
+  @return ($pixels / $context) * 1em
+
+body
+  font-family: 'Gotham Pro'
+  background: #f3f3f3
+
+.wrapper
+  display: flex
+  justify-content: flex-start
+  align-items: flex-start
+  flex-wrap: wrap
+  width: 980px
+  margin: 0 auto
+  & > div
+    margin-bottom: 20px
+// Стили popup
+.popup
+  padding: em(40) em(45)
+  width: 380px
+  background: #ffffff
+  &-title
+    font-size: em(16)
+    font-weight: normal
+    line-height: em(19)
+    letter-spacing: .6px
+    text-transform: uppercase
+    margin-bottom: em(26)
+  &-text
+    font-size: 12px
+    font-weight: normal
+    margin-bottom: 32px
+
+// popup Фильтер
+.popup-filter
+  max-width: 830px
+  width: 100%
+
+// Стили контрола
+.control
+   position: relative
+   margin-bottom: em(30)
+   border: 1px solid #ececec
+   border-radius: em(4)
+   box-sizing: border-box
+   &:last-child
+     margin-bottom: 0
+   &-label
+     display: block
+     box-sizing: border-box
+     width: 100%
+     padding: em(18)
+     &:before
+       content: attr(data-placeholder)
+       text-overflow: ellipsis
+       @extend .control-input::placeholder
+     &[data-filter-control]:before
+       color: #000
+// Двойной контрол
+.double-control
+  display: flex
+  .control-label
+    border-right: 1px solid #ececec
+    &:last-of-type
+      border-right: none
+
+// Стили контролов на одной строке в поисковом фильтре
+.control-row
+  display: flex
+  justify-content: space-between
+  align-items: center
+  width: 100%
+  margin-bottom: 30px
+  &:last-child
+    margin-bottom: 0
+  & .control
+    margin-bottom: 0
+    width: calc(50% - 10px)
+
+// Инпут
+.control-input
+  display: block
+  width: 100%
+  border: none
+  &::placeholder
+    font-family: 'Gotham Pro'
+    font-weight: normal
+    font-size: 12px
+    text-overflow: ellipsis
+    line-height: 14px
+    color: rgba(0,0,0,.5)
+  &.textarea
+    resize: none
+    min-height: 96px
+
+// Селект
+.control-select
+  &-open
+    position: absolute
+    right: 0
+    top: 25px
+    padding: em(14)
+    border-radius: 50%
+    transform: translateY(-50%)
+    cursor: pointer
+    transition: .3s
+    &:before
+      content: ''
+      display: block
+      width: em(8)
+      height: em(8)
+      border: 1px solid #6C6C6C
+      border-width: 0 1px 1px 0
+      transform:  rotate(45deg)
+    &:active
+      background: #f0f0f0
+
+// Выпадающий список
+.control-select__dropdown
+    display: none
+    position: absolute
+    z-index: 10
+    width: 290px
+    border: 1px solid #ececec
+    border-top: 0
+    top: 101%
+    left: -1px
+    background: #fff
+    border-radius: 0 0 4px 4px
+    transition: .3s
+    &-content
+      transition: .2s ease-in
+      padding: 20px 20px
+      font-size: 12px
+      font-weight: normal
+      border-bottom: 1px solid #ececec
+      &:hover
+        background: #F8F9F9
+      &:last-child
+        border-bottom: 0
+
+// Стили кнопок
+.btn
+  font-size: em(13)
+  font-weight: 600
+  border: none
+  background: none
+  padding: em(18, 13) em(36, 13)
+  line-height: 14px
+  border-radius: em(4)
+  &-container
+    display: flex
+    justify-content: space-between
+  &-primary
+    background: linear-gradient(to right,#1770f7 0%,#72a8ff 100%)
+    color: #ffffff
+  &-cancel
+    background: #F8F9F9
+    color: #6C6C6C
+  &-submit
+    width: 100%
+
+.list-link
+  position: relative
+  font-size: 12px
+  font-weight: 400
+  line-height: 14px
+  color: #2d7ef9
+  margin-bottom: 30px
+  &:before
+    content: ''
+    position: absolute
+    display: block
+    width: 100%
+    height: 1px
+    background: rgba(#2d7ef9,.5)
+    bottom: 0
+
+// Стили checkbox
+
+.checkbox
+  position: relative
+  display: flex
+  align-items: center
+  margin-bottom: 30px
+  &-input
+    display: none
+    &:checked ~ .checkbox-label:before
+      background: url("../img/icons/checked.svg") no-repeat center, linear-gradient(to right,#1770f7 0%,#72a8ff 100%)
+  &-label
+    display: inline-block !important
+    font-size: 12px
+    font-weight: normal
+    display: flex
+    align-items: center
+    cursor: pointer
+    margin-left: 34px
+    &:before
+      content: ''
+      position: absolute
+      left: 0
+      top: 50%
+      transform: translateY(-50%)
+      display: flex
+      width: 21px
+      height: 21px
+      background: linear-gradient(to right,#1770f7 0%,#72a8ff 100%)
+      border-radius: 2px
+
+

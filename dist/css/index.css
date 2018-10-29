@@ -163,15 +163,6 @@ body {
   padding: 1.125em;
 }
 
-.control-label:before {
-  content: attr(data-placeholder);
-  text-overflow: ellipsis;
-}
-
-.control-label[data-filter-control]:before {
-  color: #000;
-}
-
 .double-control {
   display: flex;
 }
@@ -207,7 +198,7 @@ body {
   border: none;
 }
 
-.control-input::placeholder, .control-label:before {
+.control-input::placeholder, .control-select .control-label:before {
   font-family: 'Gotham Pro';
   font-weight: normal;
   font-size: 12px;
@@ -244,6 +235,14 @@ body {
 
 .control-select-open:active {
   background: #f0f0f0;
+}
+
+.control-select .control-label:before {
+  content: attr(data-placeholder);
+}
+
+.control-select .control-label[data-filter-control]:before {
+  color: #000;
 }
 
 .control-select__dropdown {

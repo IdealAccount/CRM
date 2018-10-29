@@ -55,12 +55,7 @@ body
      box-sizing: border-box
      width: 100%
      padding: em(18)
-     &:before
-       content: attr(data-placeholder)
-       text-overflow: ellipsis
-       @extend .control-input::placeholder
-     &[data-filter-control]:before
-       color: #000
+
 // Двойной контрол
 .double-control
   display: flex
@@ -119,7 +114,12 @@ body
       transform:  rotate(45deg)
     &:active
       background: #f0f0f0
-
+  & .control-label
+    &:before
+      content: attr(data-placeholder)
+      @extend .control-input::placeholder
+    &[data-filter-control]:before
+      color: #000
 // Выпадающий список
 .control-select__dropdown
     display: none
